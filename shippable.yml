@@ -17,21 +17,21 @@ build:
     - echo $SHIPPABLE_SCALA_VERSION
 # Language setting
 
-integrations:
+#integrations:
   
-  notifications: 
+ # notifications: 
 
-    - integrationName: ship-webhook
-      type: webhook
-      payload:
-        - isPRBuild=$IS_PULL_REQUEST
-        - branchName=$BRANCH
-        - message=Shippable Run $BUILD_NUMBER ($BUILD_URL) succeeded for $COMPARE_URL
-        - FOO=BAR
-        - FIZZ=BUZZ
+  #  - integrationName: ship-webhook
+   #   type: webhook
+   #   payload:
+    #    - isPRBuild=$IS_PULL_REQUEST
+     #   - branchName=$BRANCH
+     #   - message=Shippable Run $BUILD_NUMBER ($BUILD_URL) succeeded for $COMPARE_URL
+     #   - FOO=BAR
+     #   - FIZZ=BUZZ
         
-      on_failure: always
-      on_start: always
-      on_success: always       
+     # on_failure: always
+     # on_start: always
+     # on_success: always       
               
      
