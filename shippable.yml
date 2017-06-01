@@ -15,6 +15,7 @@ build:
   ci:
     - java -version
     - echo $SHIPPABLE_SCALA_VERSION
+    - sleep 5m
   cache: true
 # Language setting
 
