@@ -17,9 +17,7 @@ build:
     - echo $SHIPPABLE_SCALA_VERSION
     - sleep 10m
   cache: true
-# Language setting
 
-#integrations:
   
  # notifications: 
 
